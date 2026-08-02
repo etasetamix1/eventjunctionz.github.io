@@ -1,0 +1,354 @@
+{
+    "meta": {
+      "name": "Soft Clinical Trust",
+      "version": "1.0.0",
+      "intent": "High-end medical / wellness SaaS aesthetic: approachable, trustworthy, airy, modular",
+      "do_not_include": [
+        "Specific screenshot copy",
+        "Named people or portrait subjects",
+        "Brand-specific logos from the source image",
+        "Exact photographic content"
+      ],
+      "ai_usage": "Use this file as the single source of truth for visual decisions. Prefer these tokens and patterns over inventing new styles."
+    },
+  
+    "design_principles": [
+      "Generous whitespace; never crowd the first viewport",
+      "Soft, rounded geometry everywhere (cards, images, buttons, chips)",
+      "Trust through calm color, not dark/dramatic UI",
+      "Modular card compositions over dense dashboards",
+      "Organic blob shapes behind hero imagery to break the grid",
+      "Soft floating shadows; avoid harsh borders and multi-layer neon glows",
+      "Clear hierarchy: bold heading → short body → primary CTA + secondary link",
+      "Photography is high-key, human, and framed in rounded containers — treat as replaceable slots"
+    ],
+  
+    "anti_patterns": [
+      "Sharp 0–4px corners as the default",
+      "Dark mode as default",
+      "Purple/indigo gradient SaaS look",
+      "Heavy glassmorphism or glowing neon accents",
+      "Dense newspaper / broadsheet layouts",
+      "Tiny cramped cards with many competing CTAs",
+      "Hard black body text on pure white without softening"
+    ],
+  
+    "color": {
+      "brand": {
+        "primary": {
+          "hex": "#2F5BFF",
+          "aliases": ["royalBlue", "actionBlue"],
+          "usage": ["primary buttons", "logo accent", "key icons", "active links", "focus rings"]
+        },
+        "primary_hover": {
+          "hex": "#2448D6",
+          "usage": ["primary button hover/active"]
+        },
+        "secondary_mint": {
+          "hex": "#B8F0D8",
+          "usage": ["soft fills", "icon wells", "feature accents", "blob fills"]
+        },
+        "secondary_sky": {
+          "hex": "#D7ECFF",
+          "usage": ["section tints", "card backgrounds", "decorative shapes"]
+        },
+        "secondary_lavender_mist": {
+          "hex": "#E8E9FF",
+          "usage": ["alternate soft card fills", "chip backgrounds"]
+        }
+      },
+      "neutral": {
+        "canvas": { "hex": "#FFFFFF", "usage": ["page background", "primary cards"] },
+        "section_tint": { "hex": "#F5F8FC", "usage": ["alternating section backgrounds"] },
+        "surface_muted": { "hex": "#F0F3F7", "usage": ["ghost buttons", "input fills", "list rows"] },
+        "border_subtle": { "hex": "#E6EBF2", "usage": ["optional hairlines; prefer shadow over border"] },
+        "text_heading": { "hex": "#1B2430", "usage": ["H1–H3", "nav logo text"] },
+        "text_body": { "hex": "#5B6573", "usage": ["paragraphs", "secondary labels"] },
+        "text_muted": { "hex": "#8A93A3", "usage": ["meta, captions, helper text"] },
+        "text_on_primary": { "hex": "#FFFFFF", "usage": ["text/icons on primary blue"] }
+      },
+      "semantic_surface_recipes": [
+        { "name": "mintCard", "background": "#B8F0D8", "text": "#1B2430" },
+        { "name": "skyCard", "background": "#D7ECFF", "text": "#1B2430" },
+        { "name": "whiteCard", "background": "#FFFFFF", "text": "#1B2430", "shadow": true },
+        { "name": "photoCard", "background": "image", "overlay": "optional dark gradient bottom 30%" }
+      ]
+    },
+  
+    "typography": {
+      "stack": {
+        "primary": "Geometric sans-serif",
+        "recommended_fonts": ["Plus Jakarta Sans", "Manrope", "Poppins", "Montserrat"],
+        "avoid": ["Inter as default if overused in project", "serif display", "system-ui as hero brand face"],
+        "css_example": "'Plus Jakarta Sans', 'Manrope', 'Poppins', sans-serif"
+      },
+      "scale": {
+        "display": { "size_rem": 3.25, "weight": 700, "line_height": 1.1, "letter_spacing": "-0.02em", "color": "text_heading" },
+        "h1": { "size_rem": 2.5, "weight": 700, "line_height": 1.15, "letter_spacing": "-0.02em" },
+        "h2": { "size_rem": 1.75, "weight": 700, "line_height": 1.2 },
+        "h3": { "size_rem": 1.25, "weight": 600, "line_height": 1.3 },
+        "body": { "size_rem": 1.0, "weight": 400, "line_height": 1.65, "color": "text_body" },
+        "body_sm": { "size_rem": 0.875, "weight": 400, "line_height": 1.5, "color": "text_muted" },
+        "label": { "size_rem": 0.8125, "weight": 600, "line_height": 1.3, "transform": "none" },
+        "button": { "size_rem": 0.9375, "weight": 600, "line_height": 1, "transform": "none_or_title_case" }
+      },
+      "rules": [
+        "Headings left-aligned, bold, high contrast charcoal/navy",
+        "Body medium grey, generous line-height",
+        "Keep hero supporting copy to 1–2 short sentences",
+        "No long paragraphs inside small cards"
+      ]
+    },
+  
+    "spacing": {
+      "base_unit_px": 8,
+      "section_padding_y": { "desktop_px": 96, "mobile_px": 64 },
+      "container_max_px": 1160,
+      "container_padding_x": { "desktop_px": 32, "mobile_px": 20 },
+      "stack_gap_sm_px": 12,
+      "stack_gap_md_px": 20,
+      "stack_gap_lg_px": 32,
+      "card_padding": { "sm_px": 20, "md_px": 28, "lg_px": 36 },
+      "grid_gap_px": 24,
+      "whitespace_philosophy": "Airy; prefer empty space over filling every region"
+    },
+  
+    "shape": {
+      "radius": {
+        "xs_px": 12,
+        "sm_px": 16,
+        "md_px": 24,
+        "lg_px": 32,
+        "xl_px": 40,
+        "pill_px": 999,
+        "default_card_px": 28,
+        "default_image_px": 32,
+        "default_button_px": 999
+      },
+      "organic_blobs": {
+        "enabled": true,
+        "usage": "Behind hero portraits / featured photos",
+        "characteristics": ["soft elliptical or amoeba shapes", "pastel fills (mint/sky)", "slightly offset from image", "no hard outlines"],
+        "implementation_hint": "Absolutely positioned SVG or CSS radial gradients with border-radius 40–60% irregular combos"
+      }
+    },
+  
+    "elevation": {
+      "card": {
+        "box_shadow": "0 18px 50px rgba(27, 36, 48, 0.08)",
+        "hover_box_shadow": "0 22px 60px rgba(27, 36, 48, 0.12)"
+      },
+      "soft_float": {
+        "box_shadow": "0 10px 30px rgba(47, 91, 255, 0.10)"
+      },
+      "rules": [
+        "Shadows are wide and low-opacity",
+        "Prefer shadow separation over 1px borders",
+        "No harsh multi-layer black shadows"
+      ]
+    },
+  
+    "components": {
+      "button_primary": {
+        "background": "primary",
+        "color": "text_on_primary",
+        "radius": "pill",
+        "padding": "14px 28px",
+        "font": "button",
+        "hover": "primary_hover + slight lift (translateY -1px)"
+      },
+      "button_secondary": {
+        "background": "surface_muted or secondary_sky",
+        "color": "text_heading",
+        "radius": "pill",
+        "padding": "14px 24px",
+        "border": "none"
+      },
+      "button_ghost": {
+        "background": "transparent",
+        "color": "primary",
+        "decoration": "optional underline or arrow",
+        "radius": "pill"
+      },
+      "nav": {
+        "position": "sticky or fixed top",
+        "background": "white / translucent white",
+        "height_px": 72,
+        "layout": "logo left | links center | primary pill CTA right",
+        "link_color": "text_body",
+        "link_hover": "text_heading or primary",
+        "mobile": "collapse links into menu; keep CTA visible if possible"
+      },
+      "chip_tag": {
+        "radius": "pill",
+        "padding": "6px 12px",
+        "background": "surface_muted or soft accent",
+        "font": "label",
+        "usage": "profile meta actions, category tags"
+      },
+      "icon_well": {
+        "shape": "circle",
+        "size_px": [40, 48, 56],
+        "background": "mint | sky | lavender_mist | primary/10",
+        "icon_style": "simple line or solid glyph, monochrome or primary"
+      },
+      "avatar": {
+        "shape": "circle",
+        "sizes_px": [40, 56, 72],
+        "border": "optional 3px white",
+        "shadow": "soft_float optional"
+      },
+      "card_image_led": {
+        "radius": "lg",
+        "structure": ["full-bleed image top or full card", "optional text overlay bottom", "minimal chrome"],
+        "shadow": "card"
+      },
+      "card_text_led": {
+        "radius": "lg",
+        "background": "soft accent (mint/sky)",
+        "structure": ["title", "short body", "ghost or secondary CTA"],
+        "min_height_hint_px": 220
+      },
+      "card_icon_grid": {
+        "radius": "lg",
+        "background": "white or soft tint",
+        "structure": ["optional title", "2x3 or 3x2 circular icon wells", "short labels under icons optional"]
+      },
+      "profile_card": {
+        "radius": "lg",
+        "padding": "md",
+        "structure": ["role/title", "name", "circular avatar", "1–2 pill tags"],
+        "layout": "vertical stack, left-aligned"
+      },
+      "horizontal_person_row": {
+        "radius": "pill_or_lg",
+        "structure": ["avatar", "name", "role"],
+        "layout": "horizontal, compact",
+        "background": "white",
+        "shadow": "card"
+      },
+      "input_or_list_row": {
+        "radius": "md_to_lg",
+        "background": "surface_muted",
+        "padding": "14px 18px",
+        "stack": "vertical interactive rows above full-width primary CTA"
+      }
+    },
+  
+    "layout_patterns": {
+      "page_shell": {
+        "background": "canvas",
+        "sections_alternate": ["white", "section_tint"],
+        "max_width": "container_max_px"
+      },
+      "hero_split": {
+        "columns": "1fr 1fr (stack on mobile)",
+        "left": ["eyebrow optional", "large heading", "short paragraph", "primary button + secondary text link"],
+        "right": ["rounded portrait/photo slot", "organic blob behind", "1–3 floating decorative circles"],
+        "vertical_align": "center",
+        "min_height_hint": "80–92vh on desktop, auto on mobile"
+      },
+      "services_trio": {
+        "columns": 3,
+        "gap": "grid_gap_px",
+        "card_variants_in_row": ["image_led", "text_led", "icon_grid"],
+        "purpose": "Show variety while staying in one visual language"
+      },
+      "experts_row": {
+        "columns": 3,
+        "item": "profile_card",
+        "purpose": "Directory of people / specialists"
+      },
+      "split_feature_60_40": {
+        "columns": "1.4fr 1fr",
+        "left": "large soft-tint text card + secondary CTA",
+        "right": "vertical stack of horizontal_person_row cards",
+        "mobile": "stack left then right"
+      },
+      "cta_appointment_split": {
+        "columns": "1fr 1fr",
+        "left": "large rounded image",
+        "right": ["heading", "short support", "stacked interactive rows", "full-width primary CTA"],
+        "purpose": "Conversion / booking block"
+      }
+    },
+  
+    "imagery_slots": {
+      "rules": [
+        "Do not hardcode subjects from source screenshots",
+        "Use high-key, bright, professional photography",
+        "Prefer people looking toward camera for trust when people imagery is needed",
+        "Always clip media into large-radius frames",
+        "Hero media sits inside organic blob composition, not a sharp rectangle"
+      ],
+      "slots": [
+        { "id": "hero_portrait", "aspect": "3/4 or 4/5", "frame": "rounded + blob backdrop" },
+        { "id": "service_photo", "aspect": "4/3", "frame": "rounded card" },
+        { "id": "cta_photo", "aspect": "4/5 or 1/1", "frame": "xl radius" },
+        { "id": "avatar", "aspect": "1/1", "frame": "circle" }
+      ]
+    },
+  
+    "motion": {
+      "duration_ms": { "fast": 160, "normal": 240, "slow": 400 },
+      "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+      "recommended": [
+        "Soft fade/slide-up on section enter",
+        "Button lift on hover",
+        "Card shadow deepen on hover",
+        "Avoid bouncey or flashy animations"
+      ]
+    },
+  
+    "responsive": {
+      "breakpoints_px": { "sm": 640, "md": 768, "lg": 1024, "xl": 1280 },
+      "rules": [
+        "Hero becomes single column: copy first, media second",
+        "3-column grids collapse to 1 column (or 2 at md if space allows)",
+        "Keep pill buttons full-width on very small screens in CTA stacks",
+        "Maintain large radii; do not sharpen corners on mobile"
+      ]
+    },
+  
+    "css_variables_suggested": {
+      "--color-primary": "#2F5BFF",
+      "--color-primary-hover": "#2448D6",
+      "--color-mint": "#B8F0D8",
+      "--color-sky": "#D7ECFF",
+      "--color-lavender-mist": "#E8E9FF",
+      "--color-canvas": "#FFFFFF",
+      "--color-section": "#F5F8FC",
+      "--color-surface": "#F0F3F7",
+      "--color-text": "#1B2430",
+      "--color-text-body": "#5B6573",
+      "--color-text-muted": "#8A93A3",
+      "--radius-card": "28px",
+      "--radius-image": "32px",
+      "--radius-pill": "999px",
+      "--shadow-card": "0 18px 50px rgba(27, 36, 48, 0.08)",
+      "--font-sans": "'Plus Jakarta Sans', 'Manrope', 'Poppins', sans-serif",
+      "--container": "1160px",
+      "--section-y": "96px"
+    },
+  
+    "implementation_checklist_for_ai": [
+      "Start from white canvas + soft section tints",
+      "Wire CSS variables before building components",
+      "Build nav + hero_split first to lock the language",
+      "Reuse radius-pill for all CTAs and chips",
+      "Compose pages from layout_patterns only; invent new patterns sparingly",
+      "Swap imagery via imagery_slots; never depend on source screenshot content",
+      "Keep medical/trust tone: calm blues/mints, no aggressive contrast",
+      "Validate mobile stacking for every split layout"
+    ],
+  
+    "sample_page_composition": [
+      "nav",
+      "hero_split",
+      "services_trio",
+      "experts_row",
+      "split_feature_60_40",
+      "cta_appointment_split",
+      "simple footer with soft top border or tint"
+    ]
+  }

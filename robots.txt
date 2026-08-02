@@ -1,0 +1,9 @@
+# Event Junctionz — https://eventjunctionz.com
+User-agent: *
+Allow: /
+
+# Do not index build / tooling output
+Disallow: /graphify-out/
+Disallow: /design/
+
+Sitemap: https://eventjunctionz.com/sitemap.xml

@@ -1,0 +1,364 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "seo.js",
+      "file_type": "code",
+      "source_file": "seo.js",
+      "source_location": "L1",
+      "id": "seo_js",
+      "community": 3,
+      "norm_label": "seo.js"
+    },
+    {
+      "label": "main.js",
+      "file_type": "code",
+      "source_file": "main.js",
+      "source_location": "L1",
+      "id": "main_js",
+      "community": 0,
+      "norm_label": "main.js"
+    },
+    {
+      "label": "reducedMotion()",
+      "file_type": "code",
+      "source_file": "main.js",
+      "source_location": "L9",
+      "id": "js_main_reducedmotion",
+      "community": 1,
+      "norm_label": "reducedmotion()"
+    },
+    {
+      "label": "getTheme()",
+      "file_type": "code",
+      "source_file": "main.js",
+      "source_location": "L12",
+      "id": "js_main_gettheme",
+      "community": 0,
+      "norm_label": "gettheme()"
+    },
+    {
+      "label": "setToggleState()",
+      "file_type": "code",
+      "source_file": "main.js",
+      "source_location": "L19",
+      "id": "js_main_settogglestate",
+      "community": 2,
+      "norm_label": "settogglestate()"
+    },
+    {
+      "label": "setThemeOrigin()",
+      "file_type": "code",
+      "source_file": "main.js",
+      "source_location": "L31",
+      "id": "js_main_setthemeorigin",
+      "community": 1,
+      "norm_label": "setthemeorigin()"
+    },
+    {
+      "label": "applyTheme()",
+      "file_type": "code",
+      "source_file": "main.js",
+      "source_location": "L43",
+      "id": "js_main_applytheme",
+      "community": 2,
+      "norm_label": "applytheme()"
+    },
+    {
+      "label": "runFallbackRipple()",
+      "file_type": "code",
+      "source_file": "main.js",
+      "source_location": "L51",
+      "id": "js_main_runfallbackripple",
+      "community": 1,
+      "norm_label": "runfallbackripple()"
+    },
+    {
+      "label": "switchTheme()",
+      "file_type": "code",
+      "source_file": "main.js",
+      "source_location": "L74",
+      "id": "js_main_switchtheme",
+      "community": 1,
+      "norm_label": "switchtheme()"
+    },
+    {
+      "label": "onScroll()",
+      "file_type": "code",
+      "source_file": "main.js",
+      "source_location": "L118",
+      "id": "js_main_onscroll",
+      "community": 0,
+      "norm_label": "onscroll()"
+    },
+    {
+      "label": "show()",
+      "file_type": "code",
+      "source_file": "main.js",
+      "source_location": "L205",
+      "id": "js_main_show",
+      "community": 0,
+      "norm_label": "show()"
+    },
+    {
+      "label": "open()",
+      "file_type": "code",
+      "source_file": "main.js",
+      "source_location": "L213",
+      "id": "js_main_open",
+      "community": 0,
+      "norm_label": "open()"
+    },
+    {
+      "label": "close()",
+      "file_type": "code",
+      "source_file": "main.js",
+      "source_location": "L221",
+      "id": "js_main_close",
+      "community": 0,
+      "norm_label": "close()"
+    },
+    {
+      "label": "activate()",
+      "file_type": "code",
+      "source_file": "main.js",
+      "source_location": "L235",
+      "id": "js_main_activate",
+      "community": 0,
+      "norm_label": "activate()"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "main.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_src": "main_js",
+      "_tgt": "js_main_reducedmotion",
+      "source": "main_js",
+      "target": "js_main_reducedmotion",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "main.js",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_src": "main_js",
+      "_tgt": "js_main_gettheme",
+      "source": "main_js",
+      "target": "js_main_gettheme",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "main.js",
+      "source_location": "L19",
+      "weight": 1.0,
+      "_src": "main_js",
+      "_tgt": "js_main_settogglestate",
+      "source": "main_js",
+      "target": "js_main_settogglestate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "main.js",
+      "source_location": "L31",
+      "weight": 1.0,
+      "_src": "main_js",
+      "_tgt": "js_main_setthemeorigin",
+      "source": "main_js",
+      "target": "js_main_setthemeorigin",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "main.js",
+      "source_location": "L43",
+      "weight": 1.0,
+      "_src": "main_js",
+      "_tgt": "js_main_applytheme",
+      "source": "main_js",
+      "target": "js_main_applytheme",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "main.js",
+      "source_location": "L51",
+      "weight": 1.0,
+      "_src": "main_js",
+      "_tgt": "js_main_runfallbackripple",
+      "source": "main_js",
+      "target": "js_main_runfallbackripple",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "main.js",
+      "source_location": "L74",
+      "weight": 1.0,
+      "_src": "main_js",
+      "_tgt": "js_main_switchtheme",
+      "source": "main_js",
+      "target": "js_main_switchtheme",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "main.js",
+      "source_location": "L118",
+      "weight": 1.0,
+      "_src": "main_js",
+      "_tgt": "js_main_onscroll",
+      "source": "main_js",
+      "target": "js_main_onscroll",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "main.js",
+      "source_location": "L205",
+      "weight": 1.0,
+      "_src": "main_js",
+      "_tgt": "js_main_show",
+      "source": "main_js",
+      "target": "js_main_show",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "main.js",
+      "source_location": "L213",
+      "weight": 1.0,
+      "_src": "main_js",
+      "_tgt": "js_main_open",
+      "source": "main_js",
+      "target": "js_main_open",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "main.js",
+      "source_location": "L221",
+      "weight": 1.0,
+      "_src": "main_js",
+      "_tgt": "js_main_close",
+      "source": "main_js",
+      "target": "js_main_close",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "main.js",
+      "source_location": "L235",
+      "weight": 1.0,
+      "_src": "main_js",
+      "_tgt": "js_main_activate",
+      "source": "main_js",
+      "target": "js_main_activate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "main.js",
+      "source_location": "L85",
+      "weight": 1.0,
+      "_src": "js_main_switchtheme",
+      "_tgt": "js_main_reducedmotion",
+      "source": "js_main_reducedmotion",
+      "target": "js_main_switchtheme",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "main.js",
+      "source_location": "L48",
+      "weight": 1.0,
+      "_src": "js_main_applytheme",
+      "_tgt": "js_main_settogglestate",
+      "source": "js_main_settogglestate",
+      "target": "js_main_applytheme",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "main.js",
+      "source_location": "L80",
+      "weight": 1.0,
+      "_src": "js_main_switchtheme",
+      "_tgt": "js_main_setthemeorigin",
+      "source": "js_main_setthemeorigin",
+      "target": "js_main_switchtheme",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "main.js",
+      "source_location": "L86",
+      "weight": 1.0,
+      "_src": "js_main_switchtheme",
+      "_tgt": "js_main_applytheme",
+      "source": "js_main_applytheme",
+      "target": "js_main_switchtheme",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "main.js",
+      "source_location": "L104",
+      "weight": 1.0,
+      "_src": "js_main_switchtheme",
+      "_tgt": "js_main_runfallbackripple",
+      "source": "js_main_runfallbackripple",
+      "target": "js_main_switchtheme",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "main.js",
+      "source_location": "L214",
+      "weight": 1.0,
+      "_src": "js_main_open",
+      "_tgt": "js_main_show",
+      "source": "js_main_show",
+      "target": "js_main_open",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "main.js",
+      "source_location": "L235",
+      "weight": 1.0,
+      "_src": "js_main_activate",
+      "_tgt": "js_main_open",
+      "source": "js_main_open",
+      "target": "js_main_activate",
+      "confidence_score": 1.0
+    }
+  ],
+  "hyperedges": []
+}
